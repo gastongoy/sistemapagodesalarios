@@ -10,7 +10,7 @@ public class ConexionDB {
 
     private static final String USER = "postgres";
 
-    private static final String PASSWORD = "123456";
+    private static final String PASSWORD = "12345678";
 
     public static Connection conectar() {
         Connection conn = null;
