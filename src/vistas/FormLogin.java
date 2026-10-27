@@ -35,11 +35,11 @@ public class FormLogin extends javax.swing.JFrame {
         btnSalir = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de Pagos de Salarios");
         setBackground(new java.awt.Color(244, 238, 232));
-        setPreferredSize(new java.awt.Dimension(450, 380));
         setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
@@ -71,6 +71,8 @@ public class FormLogin extends javax.swing.JFrame {
         jLabel4.setText("────────────────────────────────────────────");
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/icono_recibo.png"))); // NOI18N
+
+        jLabel5.setText("Versión 1.1 - Grupo B");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -106,6 +108,10 @@ public class FormLogin extends javax.swing.JFrame {
                         .addGap(0, 21, Short.MAX_VALUE)
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 366, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(119, 119, 119)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -128,7 +134,9 @@ public class FormLogin extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnLogin)
                     .addComponent(btnSalir))
-                .addGap(24, 24, 24))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel5)
+                .addGap(23, 23, 23))
         );
 
         pack();
@@ -199,6 +207,7 @@ if (dao.login(usuario, contrasena)) {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPasswordField txtContrasena;
     private javax.swing.JTextField txtUsuario;
