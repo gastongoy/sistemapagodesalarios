@@ -42,7 +42,7 @@ public class FormLogin extends javax.swing.JFrame {
         setBackground(new java.awt.Color(244, 238, 232));
         setResizable(false);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 3, 20)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("PAGOS DE SALARIOS");
 
