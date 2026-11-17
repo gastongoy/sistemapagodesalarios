@@ -6,11 +6,11 @@ import java.sql.SQLException;
 
 public class ConexionDB {
     private static final String URL =
-            "jdbc:postgresql://localhost:5433/sistema_pago_salarios";
+            "jdbc:postgresql://localhost:5432/sistema_pago_salarios";
 
     private static final String USER = "postgres";
 
-    private static final String PASSWORD = "123";
+    private static final String PASSWORD = "12345678";
 
     public static Connection conectar() {
         Connection conn = null;
